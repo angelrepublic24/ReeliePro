@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReeliePro - App Download</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-[#f9fafb] fixed z-50 w-full  md:h-32">
+        <div class=" mx-auto flex flex-row md:flex-row justify-between items-center px-4  md:px-0 py-4 md:py-0"
+            id="logo">
+            <!-- Logo y Ubicación -->
+            <div class="flex items-center justify-between xl:space-x-1 w-[28%] pl-10 pr-4 md:py-4">
+                <div class="md:ml-3">
+                    <h1 class="text-2xl font-bold text-orange-500">Reelie<span class="text-[#758173]">Pro</span></h1>
+                </div>
+
+                <div class="bg-[#758173] px-2 py-2 rounded-full text-white hidden lg:flex">
+                    <span class=" mr-1 text-sm xl:text-md">New York, NY</span>
+                    <img src="./img/arrow-down.png" alt="" class=" w-2 xl:w-5">
+
+                </div>
+            </div>
+
+            <!-- Selector de Ubicación y Buscador -->
+            <div class="hidden lg:flex items-center justify-between x-space-2 w-full lg:w-[70%] xl:w-[90%]">
+                <div class="w-[80%] mx-4">
+                    <div>
+                        <img src="./img/search-normal.png" alt=""
+                            class="absolute lg:top-1/2 xl:top-[42%]  transform -translate-y-1/2 h-5 w-5">
+                        <input style="text-indent: 10px;" type="text"
+                            placeholder="Find your next kayak fishing tournament"
+                            class="w-full md:w-full px-6 py-2 border-b border-[#758173] bg-[#f9fafb] focus:outline-none focus:border-orange-500  placeholder-[#758173]">
+                    </div>
+
+                </div>
+                <div class="flex justify-end space-x-6 items-center w-1/3 px-8 py-4">
+                    <a href="">
+                        <img src="./img/mouse-circle.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500 text-sm lg:text-md">Try
+                            Beta</button>
+                    </a>
+                    <a href="">
+                        <img src="./img/mobile.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500 text-sm lg:text-md">Get
+                            App</button>
+                    </a>
+                    <a href="">
+                        <img src="./img/user.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500 text-sm lg:text-md">Join
+                            Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Botón Try Beta -->
+
+            <div class="lg:hidden flex items-center mr-4 ">
+                <a href="" class="flex items-center justify-center relative bottom-1 mr-4 pt-2">
+                    <img src="./img/mobile.png" alt="">
+                    <button class="text-[#758173] font-semibold hover:text-orange-500 ml-1 mr-3">Get App</button>
+                </a>
+                <button id="menu-toggle" class="text-[#758173] focus:outline-none pt-1">
+                    <img src="./img/menu.png" alt="Menu Icon" class="w-6">
+                </button>
+            </div>
+        </div>
+
+        <!-- Parte Inferior del Header -->
+        <nav class=" w-full hidden lg:flex">
+            <div class=" container ml-10 flex justify-center md:justify-start px-0 ">
+                <a href="#" class="py-2 px-4 text-[#758173] hover:font-bold">Home</a>
+                <a href="#" class="py-2 px-4 text-[#758173] hover:font-bold ">Upcoming Tournaments</a>
+                <a href="#" class="py-2 px-4 text-[#758173] hover:font-bold ">App Download</a>
+                <a href="#" class="py-2 px-4 text-[#758173] hover:font-bold">Admin Registration</a>
+                <a href="#" class="py-2 px-4 text-[#758173] hover:font-bold">Contact Us</a>
+            </div>
+        </nav>
+
+        </div>
+
+
+        <!-- Menú Móvil Desplegable -->
+        <nav id="mobile-menu" class="hidden lg:hidden bg-[#f9fafb] border-t border-[#e2e8f0]">
+            <div class="flex flex-col space-y-4 px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <h1 class="text-2xl font-bold text-orange-500">
+                        Reelie<span class="text-[#758173]">Pro</span>
+                    </h1>
+                    <!-- Selector de New York -->
+                    <div class="bg-[#758173] px-2 py-1 rounded-full text-white flex items-center">
+                        <span class="mr-1">New York, NY</span>
+                        <img src="./img/arrow-down.png" alt="Arrow" class="w-4">
+                    </div>
+                </div>
+                <!-- Input de Búsqueda -->
+                <div class="relative w-[90%] mx-auto pt-4">
+                    <img src="./img/search-normal.png" alt="Search Icon"
+                        class="absolute left-0 top-10 transform -translate-y-1/2 w-5">
+                    <input type="text" placeholder="Find your next kayak fishing tournament"
+                        class="w-full pl-6 py-3 border-b border-[#758173] bg-[#f9fafb] focus:outline-none focus:border-orange-500 placeholder-[#758173]">
+                </div>
+                <!-- Links del Menú -->
+                <div class="flex flex-col items-center">
+                    <a href="#" class="text-[#758173] hover:font-bold py-3">Home</a>
+                    <a href="#" class="text-[#758173] hover:font-bold py-3">Upcoming Tournaments</a>
+                    <a href="#" class="text-[#758173] hover:font-bold py-3">App Download</a>
+                    <a href="#" class="text-[#758173] hover:font-bold py-3">Admin Registration</a>
+                    <a href="#" class="text-[#758173] hover:font-bold py-3">Contact Us</a>
+                </div>
+
+                <div class="flex justify-around items-center">
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <img src="./img/mouse-circle.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500">Try Beta</button>
+                    </a>
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <img src="./img/mobile.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500 ">Get App</button>
+                    </a>
+                    <a href="" class="flex flex-col justify-center items-center">
+                        <img src="./img/user.png" alt="">
+                        <button class="text-[#758173] font-semibold hover:text-orange-500">Join Now</button>
+                    </a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button id="menu-close" class="bg-white rounded-full w-12 h-12 flex justify-center items-center ">
+                        <img src="./img/Vector.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 relative overflow-hidden mb-4">
+        <!-- <div class="hidden md:flex custom-waves"></div> -->
+        <!-- <div class="flex md:hidden absolute " style="background-image: url('./img/Vector (2).png'); height: 100%;"></div> -->
+
+        <div class="absolute hidden md:flex inset-0 flex items-center justify-center ">
+            <img src="./img/Vector (1).png" alt="Vector 0"
+                class="w-[100%] h-[400px]  md:h-[350px] opacity-80 object-contain  md:object-fill relative bottom-[5px]  md:bottom-[55px]">
+        </div>
+        <div class="absolute flex md:hidden inset-0 flex items-center justify-center ">
+            <img src="./img/Vector1Mobile.png" alt="Vector 0"
+                class="w-[100%] h-[210px] sm:h-[200px]  md:h-[350px] opacity-80 object-right md:object-fill relative bottom-4 sm:bottom-10">
+        </div>
+        <div class=" hidden md:flex"><img src="./img/Vector3.png"
+                class="absolute w-full z-10 h-[61.5%] sm:h-[59%] md:h-1/2 object-cover md:object-fill md:h-[550px] bottom-[-8px] sm:bottom-4 md:bottom-0"
+                alt=""></div>
+        <div class=" flex md:hidden"><img src="./img/Vector3Mobile.png"
+                class="absolute w-full z-10 h-[55%] sm:h-[60%] md:h-1/2 md:object-fill md:h-[550px] bottom-[-8px] sm:bottom-4 md:bottom-0"
+                alt=""></div>
+
+        <div><img src="./img/Vector4.png" class="absolute object-cover w-full top-[100%] z-10  h-[300px]" alt=""></div>
+
+        <!-- <div class="block md:hidden w-full h-[700px] sm:h-[500px] bg-no-repeat bg-center bg-fill absolute top-[79px] sm:top-36"
+            style="background-image: url('./img/Vector (2).png');"></div> -->
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="mb-8 flex flex-col items-center space-y-2 overflow-hidden ">
+                <!-- Imagen encima -->
+
+                <!-- Botón -->
+                <a href="#" class="bg-[#758173] text-white px-9 py-2 rounded-full hover:bg-green-700 relative">
+                    DOWNLOAD THE APP <img src="./img/arrow-up.png" alt="Arrow Up"
+                        class="h-8 w-8 absolute bottom-1 right-1">
+                </a>
+            </div>
+
+            <h2 class="text-4xl md:text-6xl font-bold">
+                <span class="text-orange-500">Reel </span><span class="text-[#758173]">in the Action</span>
+            </h2>
+            <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
+                Download ReeliePro and start your kayak/PWC fishing tournaments, reel in rewards, showcase top catches,
+                and connect with anglers through real-time updates!
+            </p>
+
+            <div class="flex justify-center space-x-4 mb-20 ">
+                <a href="#">
+                    <img src="./img/googleplay.png" alt="Google Play" class="h-12 ">
+                </a>
+                <a href="#">
+                    <img src="./img/applepay.png" alt="App Store" class="h-12">
+                </a>
+            </div>
+
+            <div class="flex justify-center space-x-8 md:space-x-12 py-4 ">
+                <div>
+                    <img src="./img/smallBlack.png" alt="black Screen 1" class="rounded-lg h-36 md:h-80 absolute">
+                    <img src="./img/layout1.png" alt="layout"
+                        class="h-32 md:h-[19rem] relative left-1.5 md:left-2.5 top-1.5 md:top-2">
+                </div>
+                <div>
+                    <img src="./img/bigBlack.png" alt="App Screen 2"
+                        class="rounded-lg bottom-5 md:bottom-10 absolute h-40 md:h-96">
+                    <img src="./img/layout2.png" alt="layout 2"
+                        class="h-36 md:h-[23rem] relative left-1.5 md:left-2.5 bottom-3 md:bottom-8">
+                </div>
+                <div>
+                    <img src="./img/smallBlack.png" alt="App Screen 3" class="rounded-lg h-36 md:h-80 absolute">
+                    <img src="./img/layout3.png" alt="layout 3"
+                        class="h-32 md:h-[19rem] relative left-1.5 md:left-[9px] top-1.5 md:top-2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- <div class="w-full overflow-hidden leading-none relative">
+        <svg class="absolute bottom-0 w-full h-32" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C300,120 900,0 1200,120 L1200,0 L0,0 Z" fill="#f0f2eb"></path>
+        </svg>
+    </div> -->
+
+    <section class=" relative h-[850px]">
+        <div><img src="./img/Vector4.png" class="absolute  w-full top-[45%]  z-20  h-[600px]" alt=""></div>
+        <div class="py-16 px-6 md:px-12 lg:px-24 bg-white relative z-50">
+
+            <!-- Título y Descripción -->
+            <!-- Cuadrícula de características -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto ">
+                <div class="text-left lg:mb-12  flex flex-col lg:hidden order-1">
+                    <h2 class="text-4xl font-bold text-[#758173]">Level Up Your Fishing Game</h2>
+                    <p class="text-[#758173] mt-4 max-w-2xl">
+                        Compete, showcase, connect, and stay updated with every tournament. ReeliePro brings anglers together like never before.
+                    </p>
+                </div>
+    
+                <!-- Contenedor General -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 order-3 lg:order-2">        
+                    <!-- Columna de Texto (Encabezado) -->
+                    <div class="text-left mb-12 md:col-span-2 hidden lg:flex flex-col">
+                        <h2 class="text-4xl font-bold text-[#758173]">Level Up Your Fishing Game</h2>
+                        <p class="text-[#758173] mt-4 max-w-2xl">
+                            Compete, showcase, connect, and stay updated with every tournament. ReeliePro brings anglers together like never before.
+                        </p>
+                    </div>
+            
+                    <!-- Caja 1 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-[#f6f1ec] shadow-md rounded-lg">
+                        <div class="bg-[#758173] p-4 rounded-full mb-4">
+                            <img src="./img/sec2/cup.png" alt="Trophy Icon" />
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#2c3e50]">Compete & Win Prizes</h3>
+                        <p class="text-gray-500 mt-2">
+                            Participate in events for a chance to win exciting rewards.
+                        </p>
+                    </div>
+            
+                    <!-- Caja 2 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-[#f6f1ec] shadow-md rounded-lg">
+                        <div class="bg-[#758173] p-4 rounded-full mb-4">
+                            <img src="./img/sec2/message-text.png" alt="Message Icon" />
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#2c3e50]">Engage with Anglers</h3>
+                        <p class="text-gray-500 mt-2">
+                            Connect with the fishing community through posts, comments, and discussions.
+                        </p>
+                    </div>
+            
+                    <!-- Caja 3 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-[#f6f1ec] shadow-md rounded-lg">
+                        <div class="bg-[#758173] p-4 rounded-full mb-4">
+                            <img src="./img/sec2/notification-status.png" alt="Update Icon" />
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#2c3e50]">Stay Updated</h3>
+                        <p class="text-gray-500 mt-2">
+                            Get real-time updates on upcoming tournaments and results.
+                        </p>
+                    </div>
+            
+                    <!-- Caja 4 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-[#f6f1ec] shadow-md rounded-lg">
+                        <div class="bg-[#758173] p-4 rounded-full mb-4">
+                            <img src="./img/sec2/Fish.png" alt="Camera Icon" />
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#2c3e50]">Showcase Your Catches</h3>
+                        <p class="text-gray-500 mt-2">
+                            Display your best catches and celebrate your success.
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Contenedor de Imágenes -->
+                <div class="flex justify-end lg:justify-center n relative order-2 lg:order-3">
+                    <img src="./img/bigBlack.png" alt="App Screen 2" class="rounded-lg bottom-2 md:bottom-0 xl:bottom-6 2xl:bottom-0 z-0 absolute w-[200px] lg:w-[320px] xl:w-[380px] h-[400px] lg:h-[600px]  xl:h-[700px]">
+                    <img src="./img/sec3/Frame 4036.png" alt="App Screen 2"
+                        class="rounded-lg bottom-[6%] right-12 lg:left-[5%] z-50 absolute w-[250px] lg:w-[480px] h-[200px] lg:h-[330px]">
+                    <img src="./img/layout2.png" alt="layout 2"
+                        class=" relative 2xl:absolute  left-[-12px] lg:left-0 xl:left-[0%] 2xl:left-[30%] bottom-[18px] md:bottom-2.5 lg:bottom-[-36.5%] xl:bottom-[-18px] 2xl:bottom-3 h-[380px] lg:h-[570px] xl:h-[675px] lg:w-[270px] xl:w-[330px]">
+                </div>
+            
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#f9fafb] mt-4 relative z-10 overflow-hidden">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+
+            <!-- Imágenes de los Teléfonos -->
+            <div class="flex md:ml-14 space-x-10 mb-8 lg:mb-0">
+                <div class="relative">
+                    <img src="./img/smallBlack.png" alt="black Screen 1" class="rounded-lg w-[250px] ">
+                    <img src="./img/sec3/phone1.png" alt="layout"
+                        class="absolute left-1.5 md:left-3 top-1.5 md:top-5 w-[225px] h-[470px]">
+                    <!-- <img src="https://via.placeholder.com/250x500" alt="Mobile 1" class="w-48 md:w-56 lg:w-64 shadow-lg rounded-xl"> -->
+                </div>
+                <div class="relative top-40">
+                    <img src="./img/smallBlack.png" alt="black Screen 1" class="rounded-lg w-[250px] ">
+                    <img src="./img/sec3/phone1.png" alt="layout"
+                        class="absolute left-1.5 md:left-3 top-1.5 md:top-5 w-[225px] h-[470px]"> </div>
+            </div>
+
+            <!-- Texto al lado derecho -->
+            <div class="max-w-lg text-center lg:text-left">
+                <h2 class="text-3xl md:text-5xl font-bold text-[#758173] leading-tight mb-4">
+                    Record and Share <br> <span class="">Your Success</span>
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    Easily track and upload your catches during the tournament. Save the length, species, and images of
+                    your catches, making it simple to share your records.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#f9fafb] py-20 relative z-50 ">
+        <div class="mx-auto w-[90%] bg-[#3F5C4A] p-28  rounded-xl overflow-hidden relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="mb-8">
+                    <h2 class="text-6xl font-bold text-white mb-4">Instantly Get <span
+                            class="text-orange-500">Reelie</span>Pro</h2>
+                    <p class="text-white text-lg w-11/12">Scan the code to unlock exclusive tournament updates,
+                        real-time fishing data, and more—straight to your phone!</p>
+                    <div class="flex justify-start space-x-4 mt-4 ">
+                        <a href="#" class="relative group">
+                            <img src="./img/sec4/whitegoogle.png" alt="Google Play"
+                                class="h-10 transition-opacity duration-300 group-hover:opacity-0">
+                            <img src="./img/googleplay.png" alt="Google Play Hover"
+                                class="h-10 absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        </a>
+                        <a href="#" class="relative group">
+                            <img src="./img/sec4/whiteapple.png" alt="App Store"
+                                class="h-10 transition-opacity duration-300 group-hover:opacity-0">
+                            <img src="./img/applepay.png" alt="App Store Hover"
+                                class="h-10 absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <img src="./img/sec4/iPhone 14 Pro - Deep Purple - Portrait.png" class="absolute bottom-0" alt="">
+                    <img src="./img//sec4//Group 2.png" class="relative top-16 lg:top-3/4 xl:top-[55%] 2xl:top-[50%] lg:right-20 xl:right-12 lg:w-[150px] xl:w-[220px] 2xl:w-[200px] lg:h-[150px] xl:h-[220px] 2xl:h-[200px]" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-12">
+        <div class=" mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-8 text-white">
+
+            <!-- Columna 1: Logo -->
+            <div>
+                <h2 class="text-3xl font-bold text-orange-500 mb-2">Reelie<span class="text-[#758173]">Pro</span></h2>
+                <p class="text-gray-400 text-sm">© 2024 ReeliePro. All rights reserved.</p>
+            </div>
+
+            <!-- Columna 2: Links -->
+            <div>
+                <h3 class="font-bold mb-4">Home</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Upcoming Tournaments</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">App Download</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Admin Registration</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h3 class="font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-400 hover:text-white">123-456-7890</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">info@reeliepro.io</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Newsletter -->
+            <div class="md:col-span-3 lg:col-span-2 w-full">
+                <h3 class="font-bold mb-4">Get Our Latest Updates</h3>
+                <form action="#" class="flex flex-col space-y-4">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full bg-gray-900 text-white border-b border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <button type="submit"
+                        class="bg-transparent text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-gray-900 transition">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
