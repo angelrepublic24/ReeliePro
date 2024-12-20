@@ -1,39 +1,65 @@
-body {
-    padding-top: 121px; 
-  }
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-header {
-    --header-height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 50;
-  }
-  
-  section {
-    margin-top: var(--header-height); 
-  }
 
-  .custom-waves {
-    position: absolute;
-    width: 100%;
-    height: 750px; 
-    background: 
-        url('./img/Vector (2).png') no-repeat bottom center / 100% 70%;
-    overflow: hidden;
-    z-index: 2;
+html {
+  font-family: 'Rubik', 'Open Sans', sans-serif;
+
 }
 
+body {
+  padding-top: 121px;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+h2, h3{
+  font-family: 'Rubik', sans-serif;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  --header-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+nav {
+  font-family: 'Open Sans', sans-serif
+}
+nav a{
+  color: #758173;
+}
+nav a:hover {
+  font-weight: 800;
+}
+
+section {
+  margin-top: var(--header-height);
+}
+
+.custom-waves {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  background: url("./img/Vector (2).png") no-repeat bottom center / 100% 70%;
+  overflow: hidden;
+  z-index: 2;
+}
 
 .custom-waves::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('./img/Vector (2).png') no-repeat bottom center / 100% 65%;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/Vector (2).png") no-repeat bottom center / 100% 65%;
+  z-index: 1;
 }
 
 .wave {
@@ -41,4 +67,13 @@ header {
   background-color: #f0f2eb; /* Color de fondo */
   position: relative;
   clip-path: ellipse(75% 50% at 50% 100%);
+}
+
+
+footer h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+footer p{
+  color: #f6f1ec;
 }
